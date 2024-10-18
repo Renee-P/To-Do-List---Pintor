@@ -1,0 +1,108 @@
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+    padding: 50px;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 30px;
+}
+
+.add{
+    background-color: #009879;
+    border: none;
+}
+
+.del{
+    background-color: #dc3535;
+    border: none;
+}
+
+.del:hover{
+    background-color: #c22a2a;
+    border: none;
+}
+
+.del:active{
+    background-color: #c22a2a;
+    border: none;
+}
+
+.add:hover{
+    background-color: #018168;
+}
+
+.add:active {
+    background-color: #006954;
+}
+
+.popup-bg, #edit-bg, #add-bg{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(24, 24, 30, 0.7);
+}
+
+#listItem, #editItem, #addItem{
+    width: 70%;
+    padding: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+}
+
+.close {
+    position: fixed;
+    top: 4%;
+    right: 6%;
+}
